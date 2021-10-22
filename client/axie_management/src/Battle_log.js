@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 
 function Battle_log() {
+  //eslint-disable-next-line
     const [totalSlp, getSlp] = useState([]);
     const options = {
         method: 'GET',
@@ -11,6 +12,7 @@ function Battle_log() {
           'x-rapidapi-key': '01ff0af53bmsh7c2736122730407p1465c3jsn237847b0957e'
         }
       };
+      //eslint-disable-next-line
       {useEffect(()=>{
         axios.request(options)
         .then(
@@ -19,6 +21,7 @@ function Battle_log() {
         }).catch(function (error) {
           console.error(error);
         })
+        //eslint-disable-next-line
     },[])
     return (
         <div>
